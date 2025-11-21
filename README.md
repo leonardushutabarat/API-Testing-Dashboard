@@ -179,7 +179,9 @@ The dashboard exposes REST endpoints for each test:
 - ✅ Comprehensive error handling and reporting
 
 ## Screenshots
-[Add screenshot of your dashboard here]
+
+### Main Dashboard
+![API Testing Dashboard 1](https://github.com/user-attachments/assets/96b86bc7-81fd-423f-a4ed-c26fb0d2d0d5)
 
 ## Troubleshooting
 
