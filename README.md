@@ -181,7 +181,19 @@ The dashboard exposes REST endpoints for each test:
 ## Screenshots
 
 ### Main Dashboard
-![API Testing Dashboard 1](https://github.com/user-attachments/assets/96b86bc7-81fd-423f-a4ed-c26fb0d2d0d5)
+![Dashboard](https://github.com/user-attachments/assets/96b86bc7-81fd-423f-a4ed-c26fb0d2d0d5)
+*Main Dashboard Restful Booker showing site selector and test cards* 
+
+![Dashboard](https://github.com/user-attachments/assets/8176a3b0-1439-473a-adb6-ee98aefd062d)
+*Main Dashboard Petstore API showing site selector and test cards*
+
+### Test Result
+![Test Results](https://github.com/user-attachments/assets/2a684aa4-5663-48fb-82d0-ccad38714540)
+*Example test execution of Restful Booker with detailed results*
+
+![Test Results](https://github.com/user-attachments/assets/4170e3f5-8a9d-4abb-a0cd-ebc988b5ac32)
+*Example test execution of Petstore API with detailed results*
+
 
 ## Troubleshooting
 
