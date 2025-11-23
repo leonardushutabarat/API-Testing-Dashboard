@@ -218,6 +218,7 @@ The dashboard exposes REST endpoints for each test:
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
