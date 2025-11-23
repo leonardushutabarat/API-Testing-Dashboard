@@ -222,8 +222,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+- GitHub: [@leonardushutabarat](https://github.com/leonardushutabarat)
+- LinkedIn: [Leonardus Hutbarat](https://www.linkedin.com/in/leonardus-hutabarat/)
 
 ## Acknowledgments
 - [Restful Booker API](https://restful-booker.herokuapp.com/) - Practice API for testing
