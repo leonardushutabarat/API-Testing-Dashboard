@@ -100,36 +100,36 @@ API-Testing/
 │   │   ├─── java/
 │   │   │   ├─── com/
 │   │   │   │   └─── restfulbooker/
-│   │   │   │       │    Application.java
-│   │   │   │       │    PetstoreTestService.java
+│   │   │   │       │    Application.java # Main Spring Boot app
 │   │   │   │       │
 │   │   │   │       ├─── controller/
-│   │   │   │       │        PetstoreTestController.java
-│   │   │   │       │        TestController.java
+│   │   │   │       │        PetstoreTestController.java # REST endpoints for Petstore tests
+│   │   │   │       │        TestController.java # REST endpoints for Restful Booker tests
 │   │   │   │       │
 │   │   │   │       ├─── model/
-│   │   │   │       │        TestResult.java
+│   │   │   │       │        TestResult.java # Plain Old Java Object for test result data
 │   │   │   │       │
 │   │   │   │       └─── service/
-│   │   │   │                ApiTestService.java
+│   │   │   │                ApiTestService.java # Business logic for Resful Booker API tests
+│   │   │   │                PetstoreTestService.java # Business logic for Petstore API tests
 │   │   │   │
 │   │   │   └─── org/
 │   │   │       └─── example/
 │   │   │                Main.java
 │   │   │
 │   │   └─── resources/
-│   │       │    application.properties
+│   │       │    application.properties # Spring Boot configuration (port, app name)
 │   │       │
 │   │       └─── static/
-│   │                index.html
+│   │                index.html # Front-end dashboard UI
 │   │
 │   └─── test/
 │       └─── java/
 │           └─── com/
 │               └─── restfulbooker/
 │                   └─── tests/
-│                            RestfulBookerTests.java
-└─── pom.xml
+│                            RestfulBookerTests.java # JUnit tests for CLI testing
+└─── pom.xml # Maven dependencies and build configuration
 ```
 
 ## Usage

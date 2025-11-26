@@ -245,10 +245,13 @@ public class PetstoreTestService {
         long startTime = System.currentTimeMillis();
 
         try {
+            // Use a very unique ID that definitely won't exist
+            long nonExistentId = Long.MAX_VALUE - System.currentTimeMillis();
+
             Response response = given()
                     .contentType(ContentType.JSON)
                     .when()
-                    .get(BASE_URL + "/pet/999999999");
+                    .get(BASE_URL + "/pet/" + nonExistentId);
 
             long duration = System.currentTimeMillis() - startTime;
             result.setDuration(duration);
@@ -257,10 +260,10 @@ public class PetstoreTestService {
 
             if (response.getStatusCode() == 404) {
                 result.setStatus("PASSED");
-                result.setMessage("API correctly returned 404 for non-existent pet");
+                result.setMessage("API correctly returned 404 for non-existent pet ID: " + nonExistentId);
             } else {
                 result.setStatus("FAILED");
-                result.setMessage("Expected 404 for non-existent pet, got " + response.getStatusCode());
+                result.setMessage("Expected 404 for non-existent pet, got " + response.getStatusCode() + " for ID: " + nonExistentId);
             }
         } catch (Exception e) {
             result.setStatus("ERROR");
@@ -397,10 +400,13 @@ public class PetstoreTestService {
         long startTime = System.currentTimeMillis();
 
         try {
+            // Always create a fresh order first
+            orderId = null; // Reset to ensure fresh creation
             TestResult placeResult = testPlaceOrder();
             if (!placeResult.getStatus().equals("PASSED")) {
                 result.setStatus("ERROR");
                 result.setMessage("Failed to create order for delete test");
+                result.setDuration(System.currentTimeMillis() - startTime);
                 return result;
             }
 
@@ -422,7 +428,7 @@ public class PetstoreTestService {
                 orderId = null;
             } else {
                 result.setStatus("FAILED");
-                result.setMessage("Failed to delete order");
+                result.setMessage("Failed to delete order ID: " + idToDelete);
             }
         } catch (Exception e) {
             result.setStatus("ERROR");

@@ -1,7 +1,7 @@
 package com.restfulbooker.controller;
 
-import com.restfulbooker.service.PetstoreTestService;
 import com.restfulbooker.model.TestResult;
+import com.restfulbooker.service.PetstoreTestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
