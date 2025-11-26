@@ -98,38 +98,34 @@ API-Testing/
 ├─── src/
 │   ├─── main/
 │   │   ├─── java/
-│   │   │   ├─── com/
-│   │   │   │   └─── restfulbooker/
-│   │   │   │       │    Application.java # Main Spring Boot app
-│   │   │   │       │
-│   │   │   │       ├─── controller/
-│   │   │   │       │        PetstoreTestController.java # REST endpoints for Petstore tests
-│   │   │   │       │        TestController.java # REST endpoints for Restful Booker tests
-│   │   │   │       │
-│   │   │   │       ├─── model/
-│   │   │   │       │        TestResult.java # Plain Old Java Object for test result data
-│   │   │   │       │
-│   │   │   │       └─── service/
-│   │   │   │                ApiTestService.java # Business logic for Resful Booker API tests
-│   │   │   │                PetstoreTestService.java # Business logic for Petstore API tests
-│   │   │   │
-│   │   │   └─── org/
-│   │   │       └─── example/
-│   │   │                Main.java
+│   │   │   └─── com/
+│   │   │       └─── restfulbooker/
+│   │   │           │    Application.java ................ # Main Spring Boot app
+│   │   │           │
+│   │   │           ├─── controller/
+│   │   │           │        PetstoreTestController.java . # REST endpoints for Petstore tests
+│   │   │           │        TestController.java ......... # REST endpoints for Restful Booker tests
+│   │   │           │
+│   │   │           ├─── model/
+│   │   │           │        TestResult.java ............. # Plain Old Java Object for test result data
+│   │   │           │
+│   │   │           └─── service/
+│   │   │                    ApiTestService.java ......... # Business logic for Resful Booker API tests
+│   │   │                    PetstoreTestService.java .... # Business logic for Petstore API tests
 │   │   │
 │   │   └─── resources/
-│   │       │    application.properties # Spring Boot configuration (port, app name)
+│   │       │    application.properties .................. # Spring Boot configuration (port, app name)
 │   │       │
 │   │       └─── static/
-│   │                index.html # Front-end dashboard UI
+│   │                index.html .......................... # Front-end dashboard UI
 │   │
 │   └─── test/
 │       └─── java/
 │           └─── com/
 │               └─── restfulbooker/
 │                   └─── tests/
-│                            RestfulBookerTests.java # JUnit tests for CLI testing
-└─── pom.xml # Maven dependencies and build configuration
+│                            RestfulBookerTests.java ..... # JUnit tests for CLI testing
+└─── pom.xml ............................................. # Maven dependencies and build configuration
 ```
 
 ## Usage
