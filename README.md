@@ -95,26 +95,41 @@ Testing pet store management system (Swagger Petstore)
 ## Project Structure
 ```
 API-Testing/
-├── src/
-│   ├── main/
-│   │   ├── java/com/restfulbooker/
-│   │   │   ├── Application.java              # Main Spring Boot app
-│   │   │   ├── controller/
-│   │   │   │   ├── TestController.java       # Restful Booker endpoints
-│   │   │   │   └── PetstoreTestController.java # Petstore endpoints
-│   │   │   ├── service/
-│   │   │   │   ├── ApiTestService.java       # Restful Booker tests
-│   │   │   │   └── PetstoreTestService.java  # Petstore tests
-│   │   │   └── model/
-│   │   │       └── TestResult.java           # Test result model
-│   │   └── resources/
-│   │       ├── static/
-│   │       │   └── index.html                # Frontend dashboard
-│   │       └── application.properties        # Configuration
-│   └── test/
-│       └── java/
-│           └── RestfulBookerTests.java       # JUnit tests (optional)
-└── pom.xml                                    # Maven dependencies
+├─── src/
+│   ├─── main/
+│   │   ├─── java/
+│   │   │   ├─── com/
+│   │   │   │   └─── restfulbooker/
+│   │   │   │       │    Application.java
+│   │   │   │       │    PetstoreTestService.java
+│   │   │   │       │
+│   │   │   │       ├─── controller/
+│   │   │   │       │        PetstoreTestController.java
+│   │   │   │       │        TestController.java
+│   │   │   │       │
+│   │   │   │       ├─── model/
+│   │   │   │       │        TestResult.java
+│   │   │   │       │
+│   │   │   │       └─── service/
+│   │   │   │                ApiTestService.java
+│   │   │   │
+│   │   │   └─── org/
+│   │   │       └─── example/
+│   │   │                Main.java
+│   │   │
+│   │   └─── resources/
+│   │       │    application.properties
+│   │       │
+│   │       └─── static/
+│   │                index.html
+│   │
+│   └─── test/
+│       └─── java/
+│           └─── com/
+│               └─── restfulbooker/
+│                   └─── tests/
+│                            RestfulBookerTests.java
+└─── pom.xml
 ```
 
 ## Usage
@@ -234,3 +249,4 @@ This project is open source and available under the [![License: MIT](https://img
 ---
 
 ⭐ **Star this repository if you found it helpful!**
+
